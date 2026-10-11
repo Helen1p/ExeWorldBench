@@ -4,15 +4,15 @@
 
 @media(max-width:800px){.hero-desc{font-size:18px}}
 
-/* Keep the reference and every model in a single horizontally scrollable row. */
-.t1-comparison{max-width:100%;min-width:0;margin-top:28px;overflow-x:auto;padding:0 0 16px;scrollbar-color:var(--green) #e7ebe4;scrollbar-width:auto}
-.t1-comparison:focus-visible{outline:2px solid var(--green);outline-offset:4px}
-.t1-comparison-row{display:flex;align-items:flex-start;gap:40px;width:max-content}
-.comparison-outputs{display:flex;gap:18px}
-.comparison-card{width:240px;flex:0 0 240px}
-.comparison-card h4{margin:0 0 12px;font-size:14px;font-weight:600;line-height:24px;text-align:center;color:var(--ink)}
+/* Fit the input and seven model results into one row. */
+.t1-comparison{width:100%;min-width:0;margin-top:28px;container-type:inline-size}
+.t1-comparison-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,7fr);gap:24px;width:100%}
+.comparison-outputs{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px;min-width:0}
+.comparison-card{min-width:0}
+.comparison-card h4{display:flex;align-items:center;justify-content:center;min-height:36px;margin:0 0 8px;font-size:clamp(7px,1cqw,12px);font-weight:600;line-height:1.3;text-align:center;overflow-wrap:anywhere;color:var(--ink)}
 .comparison-input h4{color:var(--green)}
-.comparison-media{height:220px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:white;border:1px solid var(--line);border-radius:8px}
+.comparison-media{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;overflow:hidden;background:white;border:1px solid var(--line);border-radius:6px}
 .task .comparison-media img,.comparison-media video{display:block;width:100%;height:100%;object-fit:contain;border-radius:0}
-.comparison-unavailable{background:#f0f2ed;border:1px dashed #a8b6a6;color:var(--muted);font-size:14px;text-align:center;padding:20px}
-@media(max-width:800px){.comparison-card{width:210px;flex-basis:210px}.comparison-media{height:200px}.t1-comparison-row{gap:30px}}
+.comparison-media video{pointer-events:none}
+.comparison-unavailable{background:#f0f2ed;border:1px dashed #a8b6a6;color:var(--muted);font-size:clamp(6px,1cqw,12px);text-align:center;overflow-wrap:anywhere;padding:4px}
+@media(max-width:800px){.t1-comparison-row{gap:10px}.comparison-outputs{gap:3px}.comparison-media{border-radius:3px}}

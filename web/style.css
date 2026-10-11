@@ -49,3 +49,12 @@
 .finding-figure+.finding-figure{margin-top:48px}
 .finding-figure h3{margin:0 0 16px;font-size:clamp(18px,2vw,23px);font-weight:500;letter-spacing:-.3px;line-height:1.4}
 .construction .finding-figure figure{margin:0}
+
+/* Open media layout with consistent spacing and understated failure states. */
+.comparison-media:not(.comparison-text){border:0;border-radius:0;background:transparent}
+.comparison-card h4{margin-bottom:12px;font-weight:500;letter-spacing:.1px}
+.comparison-input h4{font-weight:600}
+.t1-comparison:not(.t3-comparison) .t1-comparison-row{row-gap:36px}
+.t3-comparison .comparison-outputs{row-gap:36px}
+.comparison-media.comparison-unavailable{background:#f0f2ed;border:0;border-radius:6px;color:#7b867e}
+.comparison-unavailable span{font-size:12px;line-height:1.6;font-style:italic}

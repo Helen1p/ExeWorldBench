@@ -18,9 +18,14 @@
 @media(max-width:800px){.t1-comparison-row{gap:10px}.comparison-outputs{gap:3px}.comparison-media{border-radius:3px}}
 
 .comparison-section-title{margin:0 0 18px;font-size:16px;font-weight:600;color:var(--green)}
-.t3-comparison .t1-comparison-row{grid-template-columns:minmax(0,2fr) minmax(0,7fr)}
+.t3-comparison .t1-comparison-row{grid-template-columns:minmax(0,1fr);gap:24px}
 .t3-comparison .comparison-outputs{grid-template-columns:repeat(7,minmax(0,1fr))}
 .t3-comparison .comparison-media{height:clamp(180px,25cqw,300px);aspect-ratio:auto}
 .comparison-text{align-items:flex-start;justify-content:flex-start;background:#f0f2ed;padding:12px;overflow:auto}
 .comparison-text pre{margin:0;white-space:pre-wrap;overflow-wrap:anywhere;text-align:left;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:clamp(8px,1cqw,11px);line-height:1.45;color:var(--ink)}
 @media(max-width:800px){.comparison-text{padding:6px}}
+
+.t3-comparison .comparison-input h4{justify-content:flex-start;min-height:0;text-align:left;font-size:13px}
+.t3-comparison .comparison-text{height:auto;aspect-ratio:auto;padding:18px 22px;border-left:3px solid var(--green)}
+.t3-comparison .comparison-text pre{font-size:clamp(11px,1.15cqw,13px);line-height:1.65}
+.t3-comparison .comparison-outputs .comparison-media{height:auto;aspect-ratio:1/1}

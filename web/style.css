@@ -44,3 +44,8 @@
  .t3-comparison .comparison-outputs>.comparison-card{flex-basis:calc((100% - 24px)/4)}
  .t3-comparison .comparison-outputs>.comparison-card:nth-child(n+5){margin-inline:3px}
 }
+
+.finding-figure{margin-top:36px}
+.finding-figure+.finding-figure{margin-top:48px}
+.finding-figure h3{margin:0 0 16px;font-size:clamp(18px,2vw,23px);font-weight:500;letter-spacing:-.3px;line-height:1.4}
+.construction .finding-figure figure{margin:0}

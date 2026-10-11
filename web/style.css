@@ -18,8 +18,8 @@
 @media(max-width:800px){.t1-comparison-row{gap:10px}.comparison-outputs{gap:3px}.comparison-media{border-radius:3px}}
 
 .comparison-section-title{margin:0 0 18px;font-size:16px;font-weight:600;color:var(--green)}
-.t3-comparison .t1-comparison-row{grid-template-columns:minmax(0,1.15fr) minmax(0,3fr)}
-.t3-comparison .comparison-outputs{grid-template-columns:repeat(3,minmax(0,1fr))}
+.t3-comparison .t1-comparison-row{grid-template-columns:minmax(0,2fr) minmax(0,7fr)}
+.t3-comparison .comparison-outputs{grid-template-columns:repeat(7,minmax(0,1fr))}
 .t3-comparison .comparison-media{height:clamp(180px,25cqw,300px);aspect-ratio:auto}
 .comparison-text{align-items:flex-start;justify-content:flex-start;background:#f0f2ed;padding:12px;overflow:auto}
 .comparison-text pre{margin:0;white-space:pre-wrap;overflow-wrap:anywhere;text-align:left;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:clamp(8px,1cqw,11px);line-height:1.45;color:var(--ink)}

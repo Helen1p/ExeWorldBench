@@ -29,3 +29,18 @@
 .t3-comparison .comparison-text{height:auto;aspect-ratio:auto;padding:18px 22px;border-left:3px solid var(--green)}
 .t3-comparison .comparison-text pre{font-size:clamp(11px,1.15cqw,13px);line-height:1.65}
 .t3-comparison .comparison-outputs .comparison-media{height:auto;aspect-ratio:1/1}
+
+/* Two-row task comparisons: 4 + 4 including input, or 4 + 3 models. */
+.t1-comparison:not(.t3-comparison) .t1-comparison-row{grid-template-columns:repeat(4,minmax(0,1fr));gap:26px 20px}
+.t1-comparison:not(.t3-comparison) .comparison-outputs{display:contents}
+.t3-comparison .comparison-outputs{display:flex;flex-wrap:wrap;justify-content:center;gap:26px 24px}
+.t3-comparison .comparison-outputs>.comparison-card{flex:0 0 calc((100% - 72px)/4)}
+.t3-comparison .comparison-outputs>.comparison-card:nth-child(n+5){margin-inline:8px}
+.comparison-card h4{font-size:clamp(10px,1.25cqw,14px)}
+.comparison-unavailable{font-size:clamp(10px,1.25cqw,14px)}
+@media(max-width:800px){
+ .t1-comparison:not(.t3-comparison) .t1-comparison-row{gap:20px 8px}
+ .t3-comparison .comparison-outputs{gap:20px 8px}
+ .t3-comparison .comparison-outputs>.comparison-card{flex-basis:calc((100% - 24px)/4)}
+ .t3-comparison .comparison-outputs>.comparison-card:nth-child(n+5){margin-inline:3px}
+}

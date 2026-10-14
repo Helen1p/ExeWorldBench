@@ -8,7 +8,7 @@
   <a href="https://helen1p.github.io/ExeWorldBench/">🌐 Project Page</a>
   &nbsp; 
   |&nbsp;
-  <a href="">📄 Paper</a>
+  <a href="https://arxiv.org/pdf/2610.15166">📄 Paper</a>
  &nbsp; |&nbsp;
   <a href="https://huggingface.co/datasets/HelenPeng/ExeWorldBench"> 🤗 Dataset</a>
   &nbsp; 
